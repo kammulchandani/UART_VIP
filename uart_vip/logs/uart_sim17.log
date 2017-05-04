@@ -1,0 +1,96 @@
+Command: ./simv +UVM_TIMEOUT=5000000 -l ./logs/uart_sim17.log
+Chronologic VCS simulator copyright 1991-2014
+Contains Synopsys proprietary information.
+Compiler version I-2014.03-2; Runtime version I-2014.03-2;  Dec  2 01:52 2016
+----------------------------------------------------------------
+UVM-1.1d.VCS
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test u0_test...
+UVM_INFO @ 0: reporter [TIMOUTSET] '+UVM_TIMEOUT=5000000' provided on the command line is being applied.
+UVM_INFO verif/uart_tx_uvc/./uart_tx_driver.sv(13) @ 0: uvm_test_top.tb_h.uvc_h.agnt_h.u0_driver [U0_DRIVER]  THIS IS A BUILD PHASE
+UVM_INFO verif/uart_tx_uvc/./uart_tx_monitor.sv(25) @ 0: uvm_test_top.tb_h.uvc_h.agnt_h.u0_monitor [U0_MONITOR]  THIS IS A BUILD PHASE
+UVM_INFO verif/uart_tx_uvc/./uart_dut_monitor.sv(19) @ 0: uvm_test_top.tb_h.uvc_h.dut_agnt_h.uart_dut_monitor [UART_DUT_MON]  Inside build phase
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+----------------------------------------------------------------------
+Name                         Type                     Size  Value     
+----------------------------------------------------------------------
+uvm_test_top                 u0_test                  -     @460      
+  tb_h                       u0_tb                    -     @468      
+    tx_scbd                  u0_tx_scoreboard         -     @607      
+      rx_uart                uvm_analysis_imp_rx      -     @624      
+      tx_uart                uvm_analysis_imp_tx      -     @615      
+    u0_vseqr                 u0_vsequencer            -     @484      
+      rsp_export             uvm_analysis_export      -     @492      
+      seq_item_export        uvm_seq_item_pull_imp    -     @598      
+      arbitration_queue      array                    0     -         
+      lock_queue             array                    0     -         
+      num_last_reqs          integral                 32    'd1       
+      num_last_rsps          integral                 32    'd1       
+    uvc_h                    u0_uvc                   -     @476      
+      agnt_h                 u0_agent                 -     @638      
+        u0_driver            u0_driver                -     @677      
+          rsp_port           uvm_analysis_port        -     @694      
+          seq_item_port      uvm_seq_item_pull_port   -     @685      
+        u0_monitor           u0_monitor               -     @660      
+          tx_mon_port        uvm_analysis_port        -     @668      
+        u0_sequencer         u0_sequencer             -     @703      
+          rsp_export         uvm_analysis_export      -     @711      
+          seq_item_export    uvm_seq_item_pull_imp    -     @817      
+          arbitration_queue  array                    0     -         
+          lock_queue         array                    0     -         
+          num_last_reqs      integral                 32    'd1       
+          num_last_rsps      integral                 32    'd1       
+        is_active            uvm_active_passive_enum  1     UVM_ACTIVE
+      dut_agnt_h             uart_dut_agent           -     @646      
+        uart_dut_monitor     uart_dut_monitor         -     @837      
+          dut_mon_port       uvm_analysis_port        -     @845      
+----------------------------------------------------------------------
+
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(126) @ 130: uvm_test_top.tb_h.tx_scbd [ CFG_SETTINGS ] Async USART Mode set
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(141) @ 130: uvm_test_top.tb_h.tx_scbd [ ODD PARITY]  Odd Parity Configured 
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(147) @ 130: uvm_test_top.tb_h.tx_scbd [ STOP BIT 2-bits] Stop bit is set to 2 bits 
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(159) @ 130: uvm_test_top.tb_h.tx_scbd [CHAR SIZE 8 ]  Char size set to 8 
+UVM_FATAL /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_phase.svh(1270) @ 5000000: reporter [PH_TIMEOUT] Explicit timeout of 5000000 hit, indicating a probable testbench issue
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   10
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    1
+** Report counts by id
+[ CFG_SETTINGS ]     1
+[ ODD PARITY]     1
+[ STOP BIT 2-bits]     1
+[CHAR SIZE 8 ]     1
+[PH_TIMEOUT]     1
+[RNTST]     1
+[TIMOUTSET]     1
+[U0_DRIVER]     1
+[U0_MONITOR]     1
+[UART_DUT_MON]     1
+[UVMTOP]     1
+$finish called from file "/apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_report_object.svh", line 292.
+$finish at simulation time              5000000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 5000000 ns
+CPU Time:      3.760 seconds;       Data structure size:   0.2Mb
+Fri Dec  2 01:52:52 2016

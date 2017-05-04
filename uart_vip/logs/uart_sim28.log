@@ -1,0 +1,313 @@
+Command: ./simv +UVM_TIMEOUT=5000000 -l ./logs/uart_sim28.log
+Chronologic VCS simulator copyright 1991-2014
+Contains Synopsys proprietary information.
+Compiler version I-2014.03-2; Runtime version I-2014.03-2;  Dec  2 01:55 2016
+----------------------------------------------------------------
+UVM-1.1d.VCS
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test u0_test...
+UVM_INFO @ 0: reporter [TIMOUTSET] '+UVM_TIMEOUT=5000000' provided on the command line is being applied.
+UVM_INFO verif/uart_tx_uvc/./uart_tx_driver.sv(13) @ 0: uvm_test_top.tb_h.uvc_h.agnt_h.u0_driver [U0_DRIVER]  THIS IS A BUILD PHASE
+UVM_INFO verif/uart_tx_uvc/./uart_tx_monitor.sv(25) @ 0: uvm_test_top.tb_h.uvc_h.agnt_h.u0_monitor [U0_MONITOR]  THIS IS A BUILD PHASE
+UVM_INFO verif/uart_tx_uvc/./uart_dut_monitor.sv(19) @ 0: uvm_test_top.tb_h.uvc_h.dut_agnt_h.uart_dut_monitor [UART_DUT_MON]  Inside build phase
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+----------------------------------------------------------------------
+Name                         Type                     Size  Value     
+----------------------------------------------------------------------
+uvm_test_top                 u0_test                  -     @460      
+  tb_h                       u0_tb                    -     @468      
+    tx_scbd                  u0_tx_scoreboard         -     @607      
+      rx_uart                uvm_analysis_imp_rx      -     @624      
+      tx_uart                uvm_analysis_imp_tx      -     @615      
+    u0_vseqr                 u0_vsequencer            -     @484      
+      rsp_export             uvm_analysis_export      -     @492      
+      seq_item_export        uvm_seq_item_pull_imp    -     @598      
+      arbitration_queue      array                    0     -         
+      lock_queue             array                    0     -         
+      num_last_reqs          integral                 32    'd1       
+      num_last_rsps          integral                 32    'd1       
+    uvc_h                    u0_uvc                   -     @476      
+      agnt_h                 u0_agent                 -     @638      
+        u0_driver            u0_driver                -     @677      
+          rsp_port           uvm_analysis_port        -     @694      
+          seq_item_port      uvm_seq_item_pull_port   -     @685      
+        u0_monitor           u0_monitor               -     @660      
+          tx_mon_port        uvm_analysis_port        -     @668      
+        u0_sequencer         u0_sequencer             -     @703      
+          rsp_export         uvm_analysis_export      -     @711      
+          seq_item_export    uvm_seq_item_pull_imp    -     @817      
+          arbitration_queue  array                    0     -         
+          lock_queue         array                    0     -         
+          num_last_reqs      integral                 32    'd1       
+          num_last_rsps      integral                 32    'd1       
+        is_active            uvm_active_passive_enum  1     UVM_ACTIVE
+      dut_agnt_h             uart_dut_agent           -     @646      
+        uart_dut_monitor     uart_dut_monitor         -     @837      
+          dut_mon_port       uvm_analysis_port        -     @845      
+----------------------------------------------------------------------
+
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(126) @ 130: uvm_test_top.tb_h.tx_scbd [ CFG_SETTINGS ] Async USART Mode set
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(141) @ 130: uvm_test_top.tb_h.tx_scbd [ ODD PARITY]  Odd Parity Configured 
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(147) @ 130: uvm_test_top.tb_h.tx_scbd [ STOP BIT 2-bits] Stop bit is set to 2 bits 
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(159) @ 130: uvm_test_top.tb_h.tx_scbd [CHAR SIZE 8 ]  Char size set to 8 
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 13820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 023 received 023
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 33020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 027 received 027
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 52220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 022 received 022
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 71420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 051 received 051
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 90620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 015 received 015
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 109820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 00f received 00f
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 129020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 015 received 015
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 148220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 051 received 051
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 167420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 01d received 01d
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 186620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 03d received 03d
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 205820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 027 received 027
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 225020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 061 received 061
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 244220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 004 received 004
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 263420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 027 received 027
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 282620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 045 received 045
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 301820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 01e received 01e
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 321020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 062 received 062
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 340220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 034 received 034
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 359420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 02e received 02e
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 378620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 00c received 00c
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 397820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 061 received 061
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 417020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 01d received 01d
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 436220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 02a received 02a
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 455420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 01f received 01f
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 474620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 031 received 031
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 493820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 01c received 01c
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 513020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 042 received 042
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 532220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 051 received 051
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 551420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 022 received 022
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 570620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 004 received 004
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 589820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 012 received 012
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 609020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 04b received 04b
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 628220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 03a received 03a
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 647420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 060 received 060
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 666620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 054 received 054
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 685820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 031 received 031
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 705020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 051 received 051
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 724220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 023 received 023
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 743420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 046 received 046
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 762620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 033 received 033
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 781820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 047 received 047
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 801020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 04c received 04c
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 820220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 004 received 004
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 839420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 059 received 059
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 858620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 060 received 060
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 877820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 014 received 014
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 897020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 007 received 007
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 916220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 03a received 03a
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 935420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 025 received 025
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 954620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 014 received 014
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 973820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 014 received 014
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 993020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 002 received 002
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1012220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 040 received 040
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1031420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 03f received 03f
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1050620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 01e received 01e
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1069820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 041 received 041
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1089020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 03f received 03f
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1108220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 036 received 036
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1127420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 061 received 061
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1146620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 035 received 035
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1165820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 03e received 03e
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1185020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 03b received 03b
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1204220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 009 received 009
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1223420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 02a received 02a
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1242620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 029 received 029
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1261820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 038 received 038
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1281020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 040 received 040
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1300220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 002 received 002
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1319420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 005 received 005
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1338620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 05d received 05d
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1357820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 02b received 02b
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1377020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 031 received 031
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1396220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 035 received 035
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1415420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 029 received 029
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1434620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 00f received 00f
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1453820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 05f received 05f
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1473020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 009 received 009
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1492220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 023 received 023
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1511420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 000 received 000
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1530620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 04c received 04c
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1549820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 028 received 028
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1569020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 058 received 058
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1588220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 008 received 008
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1607420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 029 received 029
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1626620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 013 received 013
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1645820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 051 received 051
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1665020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 01e received 01e
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1684220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 025 received 025
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1703420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 059 received 059
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1722620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 001 received 001
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1741820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 032 received 032
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1761020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 062 received 062
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1780220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 042 received 042
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1799420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 031 received 031
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1818620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 033 received 033
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1837820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 014 received 014
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1857020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 001 received 001
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1876220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 020 received 020
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1895420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 04c received 04c
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1914620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 054 received 054
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1933820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 01d received 01d
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1953020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 04c received 04c
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1972220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 03b received 03b
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 1991420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 052 received 052
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2010620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 03b received 03b
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2029820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 047 received 047
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2049020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 012 received 012
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2068220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 05f received 05f
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2087420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 04e received 04e
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2106620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 00a received 00a
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2125820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 04a received 04a
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2145020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 00f received 00f
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2164220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 010 received 010
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2183420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 00b received 00b
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2202620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 026 received 026
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2221820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 057 received 057
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2241020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 05f received 05f
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2260220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 059 received 059
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2279420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 05f received 05f
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2298620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 061 received 061
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2317820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 061 received 061
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2337020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 033 received 033
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2356220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 00c received 00c
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2375420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 020 received 020
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2394620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 051 received 051
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2413820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 02b received 02b
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2433020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 031 received 031
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2452220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 041 received 041
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2471420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 019 received 019
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2490620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 035 received 035
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2509820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 02a received 02a
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2529020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 05e received 05e
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2548220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 053 received 053
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2567420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 05b received 05b
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2586620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 008 received 008
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2605820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 05d received 05d
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2625020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 015 received 015
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2644220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 02e received 02e
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2663420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 013 received 013
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2682620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 02a received 02a
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2701820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 028 received 028
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2721020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 00d received 00d
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2740220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 057 received 057
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2759420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 018 received 018
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2778620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 05c received 05c
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2797820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 008 received 008
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2817020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 026 received 026
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2836220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 027 received 027
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2855420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 056 received 056
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2874620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 02b received 02b
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2893820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 010 received 010
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2913020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 042 received 042
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2932220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 015 received 015
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2951420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 050 received 050
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2970620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 004 received 004
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 2989820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 05b received 05b
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3009020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 01d received 01d
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3028220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 04b received 04b
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3047420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 013 received 013
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3066620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 050 received 050
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3085820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 03d received 03d
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3105020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 030 received 030
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3124220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 017 received 017
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3143420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 01e received 01e
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3162620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 056 received 056
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3181820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 04b received 04b
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3201020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 000 received 000
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3220220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 04c received 04c
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3239420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 028 received 028
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3258620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 01e received 01e
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3277820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 04f received 04f
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3297020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 036 received 036
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3316220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 057 received 057
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3335420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 00a received 00a
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3354620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 063 received 063
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3373820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 04a received 04a
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3393020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 062 received 062
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3412220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 038 received 038
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3431420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 054 received 054
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3450620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 01b received 01b
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3469820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 020 received 020
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3489020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 03d received 03d
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3508220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 00a received 00a
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3527420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 052 received 052
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3546620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 005 received 005
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3565820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 008 received 008
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3585020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 054 received 054
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3604220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 01e received 01e
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3623420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 00b received 00b
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3642620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 056 received 056
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3661820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 002 received 002
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3681020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 047 received 047
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3700220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 009 received 009
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3719420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 041 received 041
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3738620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 051 received 051
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3757820: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 012 received 012
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3777020: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 045 received 045
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3796220: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 046 received 046
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3815420: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 01b received 01b
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(236) @ 3834620: uvm_test_top.tb_h.tx_scbd [DATA Matched] expected 063 received 063
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 3841025: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(337) @ 3841025: uvm_test_top.tb_h.tx_scbd [    $$$$$$     ] ############################################################### 
+
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(338) @ 3841025: uvm_test_top.tb_h.tx_scbd [    TXN_IN     ] Num. of Transactions input to the DUT     200
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(339) @ 3841025: uvm_test_top.tb_h.tx_scbd [    TXN_OUT    ] Num. of Transactions output from the DUT  200
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(340) @ 3841025: uvm_test_top.tb_h.tx_scbd [    TXN_STATUS ]                    
+ 																 Txn compared 200 
+ 																 Txn Passed   200 
+ 																 Txn Failed    0 
+  																 Txn Dropped   0 
+
+UVM_INFO verif/sequences/./../top/uart_tx_sb.sv(341) @ 3841025: uvm_test_top.tb_h.tx_scbd [    $$$$$$     ] ############################################################### 
+
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  216
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[    $$$$$$     ]     2
+[    TXN_IN     ]     1
+[    TXN_OUT    ]     1
+[    TXN_STATUS ]     1
+[ CFG_SETTINGS ]     1
+[ ODD PARITY]     1
+[ STOP BIT 2-bits]     1
+[CHAR SIZE 8 ]     1
+[DATA Matched]   200
+[RNTST]     1
+[TEST_DONE]     1
+[TIMOUTSET]     1
+[U0_DRIVER]     1
+[U0_MONITOR]     1
+[UART_DUT_MON]     1
+[UVMTOP]     1
+$finish called from file "/apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_root.svh", line 438.
+$finish at simulation time              3841025
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 3841025 ns
+CPU Time:      3.140 seconds;       Data structure size:   0.2Mb
+Fri Dec  2 01:55:56 2016
